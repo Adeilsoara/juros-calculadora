@@ -5,7 +5,11 @@
 
 		var jurosim = capital *(txjuros/100) * tmeses;
 
-		document.getElementById('resultado').innerHTML = "Juros Simples R$:" + jurosim;
+		
+		document.getElementById('resultado').innerHTML = "Juros Simples R$:" + jurosim ;
+		
+		verificar();  
+				
 	}
 
 	function juroscompostos() {
@@ -16,4 +20,13 @@
 		var montante = capital * Math.pow((1+convert), tmeses);
 
 		document.getElementById('compostos').innerHTML ="Juros Compostos R$:" + montante.toFixed(2); 
+	}
+
+	function verificar() {
+		if (form1.capital.value=="" || form1.txjuros.value=="" || form1.tmeses.value=="") {
+			alert("favor preencher");
+			return false;
+		} else {
+			return true;
+		}
 	}
