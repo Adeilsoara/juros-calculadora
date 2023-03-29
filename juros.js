@@ -1,3 +1,4 @@
+	/* Função para afetuar o cálculo dos juros simples  */
 	function jurosimples() {
 		var capital = document.getElementById('capital').value;
 		var txjuros = parseFloat(document.getElementById('txjuros').value);
@@ -12,6 +13,7 @@
 				
 	}
 
+        /* Função para afetuar o cálculo dos juros compostos  */
 	function juroscompostos() {
 		var capital = document.getElementById('capital').value;
 		var txjuros = parseFloat(document.getElementById('txjuros').value);
